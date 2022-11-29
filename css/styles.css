@@ -59,7 +59,7 @@ ul {
   height: 80px;
 }
 
-.site-nav .item + .item {
+.site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
 
@@ -70,13 +70,13 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container.main-nav {
+.container--flex {
   display: flex;
   align-items: center;
   height: inherit;
 }
 
-.list.mail-tel {
+.email-tel {
   display: flex;
   margin-left: auto;
 }
@@ -139,11 +139,11 @@ img {
   color: var(--primary-text-color);
 }
 
-.logo-element {
+.logo__element {
   color: var(--color-hover-logo-button);
 }
 
-.link.visited-effect:visited {
+.site-nav__link--visited:visited {
   color: var(--color-hover-logo-button);
 }
 
@@ -157,12 +157,12 @@ img {
 }
 
 h2,
-.person-names,
-.title-list{
+.our-team__name,
+.list-decisions__title{
   color: var(--accent-color);
 }
 
-.section.hero {
+.hero {
   background-color: var(--color-background-footer);
   text-align: center;
   padding-top: 200px;
@@ -192,7 +192,7 @@ h2,
   margin-bottom: 20px;
 }
 
-.geo {
+.list-footer__geo-link {
   color: var(--primary-white-color);
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -209,8 +209,8 @@ h2,
   line-height: 1.2;
 }
 
-/* Шрифт для тексту в title-list */
-.text {
+/* Шрифт для тексту в list-decisions__title */
+.list-decisions__text {
   font-size: 14px;
   line-height: 1.7;
   width: 270px;
@@ -227,7 +227,7 @@ h2,
 }
 
 /* Заголовок для "Студія" */
-.hero-title {
+.hero__title {
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -237,7 +237,7 @@ h2,
 }
 
 /* h2 для "Студія" */
-.subtitle {
+.container__subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -246,7 +246,7 @@ h2,
 }
 
 /* h3 для "Студія" */
-.title-list {
+.list-decisions__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -254,13 +254,13 @@ h2,
   width: 270px;
 }
 
-.person-names {
+.our-team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.profession {
+.our-team__profession {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 16px;
@@ -286,7 +286,7 @@ h2,
 
 /*Кнопки(портфоліо)*/
 
-.button-element {
+.button-box__element {
   color: var(--accent-color);
   background-color: var(--color-background-button-portfolio);
   font-weight: 500;
@@ -300,35 +300,31 @@ h2,
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-box-item:not(:first-child){
+.button-box__item:not(:first-child){
   margin-left: 8px;
 }
 
-.button-element.all {
-  padding: 6px 25px;
-}
-
-.button-element:hover {
+.button-box__element:hover {
   color: var(--primary-white-color);
   background-color: var(--color-hover-logo-button);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-element:focus {
+.button-box__element:focus {
   color: var(--primary-white-color);
   background-color: var(--color-hover-logo-button);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.heading-port {
+.description__title-portfolio {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.text-port {
+.description__text-portfolio {
   font-size: 16px;
   line-height: 1.9;
 }
@@ -339,12 +335,12 @@ h2,
 
 
 /* Класи для Студія(позиціонування) */
-.list.some-photo {
+.some-photo-list {
   display: flex;
   justify-content: space-between;
 }
 
-.section.example {
+.section--padding{
   padding-top: 0;
 }
 
@@ -352,34 +348,34 @@ h2,
   padding-bottom: 0;
 }
 
-.list.after-head {
+.list-decisions {
   display: flex;
 }
 
-.item-after-head {
+.list-decisions__item{
   margin-right: 30px;
 }
 
-.list-item-footer:not(:last-child) {
+.list-footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.list-our-team {
+.our-team__list {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 
-.container-our-team {
+.our-team__container{
   padding-bottom: 94px;
 }
 
-.person-margin {
+.our-team__name--margin {
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.item-person {
+.our-team__item {
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -413,29 +409,29 @@ h2,
 
 /* Конверт і телефон в хедері */
 
-.svg-email{
+.email-header__svg{
   margin-right: 10px;
   fill: currentColor;
   align-items: center;
 }
 
-.svg-email:hover{
+.email-header__svg:hover{
  color: var(--color-hover-logo-button);
 }
 
-.svg-tel{
+.tel-header__svg{
   align-items: center;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.svg-tel:hover{
+.tel-header__svg:hover{
   color: var(--color-hover-logo-button);
 }
 
 /* Рішення */
 
-.svg-decisions-box{
+.list-decisions__svg-box{
   height: 120px;
   display: flex;
   justify-content: center;
@@ -444,7 +440,7 @@ h2,
   background-color: var(--color-background-button-portfolio);
 }
 
-.decisions-all-svg{
+.list-decisions__icon{
   width: 70px;
   height: 70px;
 }
@@ -460,12 +456,12 @@ h2,
   margin-bottom: 30px;
 }
 
-.social-item{
+.social-links-box__item{
   width: 44px;
   height: 44px;
 }
 
-.social-links{
+.social-links-box__link{
   display: flex;
   width: 100%;
   height: 100%;
@@ -477,19 +473,19 @@ h2,
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-socials{
+.social-links-box__icon{
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.social-links:hover,
-.social-links:focus{
+.social-links-box__link:hover,
+.social-links-box__link:focus{
   background-color: var(--color-hover-logo-button);
   color: var(--primary-white-color); 
 }
 
-.social-links:not(:first-child){
+.social-links-box__link:not(:first-child){
   margin-left: 10px;
 }
 
@@ -503,12 +499,12 @@ h2,
   align-items: center;
 }
 
-.regular-customers-item{
+.regular-customers__item{
   width: 170px;
   height: 92px;
 }
 
-.customers-link{
+.regular-customers__link{
   width: 100%;
   height: 100%;
   display: flex;
@@ -521,14 +517,14 @@ h2,
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-svg{
+.regular-customers__icon{
   width: 106px;
   height: 60px;
   fill: currentColor;
 }
 
-.customers-link:hover,
-.customers-link:focus{
+.regular-customers__link:hover,
+.regular-customers__link:focus{
   color: var(--color-hover-logo-button);
   border-color: var(--color-hover-logo-button);
 }
@@ -542,7 +538,7 @@ h2,
   justify-content: space-between;
 }
 
-.join-word{
+.titles-in-footer{
 display: inline-block;
 font-weight: 700;
 font-size: 14px;
@@ -553,7 +549,7 @@ color: var(--primary-white-color);
 margin-bottom: 20px;
 }
 
-.social-links-footer{
+.social-links-box__link--color{
  color: var(--primary-white-color);
 background-color: rgba(255, 255, 255, 0.1); 
 }
@@ -569,7 +565,7 @@ margin-left: 70px;
 
 /* Ховер для карточок в Портфоліо */
 
-.link-portfolio-card{
+.imgs-portfolio__link-card{
   display: block;
   text-decoration: none;
   color: var(--accent-color);
@@ -577,18 +573,18 @@ margin-left: 70px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-portfolio-card:hover,
-.link-portfolio-card:focus{
+.imgs-portfolio__link-card:hover,
+.imgs-portfolio__link-card:focus{
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* Опис картинки у розділі "Чим ми займаємося" */
 
-.some-photo-item{
+.some-photo-list__item{
   position: relative;
 }
 
-.some-photo-description-container{
+.some-photo-list__description-container{
 position: absolute;
 width: 100%;
 height: 70px;
@@ -596,7 +592,7 @@ bottom: 0;
 background-color: rgba(47, 48, 58, 0.8);
 }
 
-.some-photo-description{
+.some-photo-list__description{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -638,7 +634,7 @@ background-color: var(--primary-white-color);
 padding: 40px;
 }
 
-.button-close-modal{
+.modal__button-close{
 width: 30px;
 height: 30px;
 background-color: var(--primary-white-color);
@@ -651,11 +647,11 @@ border-radius: 50%;
  
 }
 
-.modal-close{
+.modal__icon-close{
 vertical-align: middle;
 }
 
-.modal-close:hover{
+.modal__icon-close:hover{
   fill: rgba(33, 150, 243, 1);
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -665,7 +661,7 @@ vertical-align: middle;
 
 /* Контент у модальному вікні */
 
-.title-modal{
+.modal__title{
 color: rgba(33, 33, 33, 1);
 font-weight: 700;
 font-size: 20px;
@@ -674,12 +670,12 @@ text-align: center;
 margin-bottom: 12px;
 }
 
-.input-line{
+.modal__input-box{
   margin-bottom: 10px;
 }
 
-.modal-input,
-.modal-textarea{
+.modal__input,
+.modal__textarea{
 width: 100%;
 height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
@@ -688,15 +684,15 @@ font-size: 16px;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input{
+.modal__input{
   padding-left: 42px;
 }
 
-.input-wrapper{
+.modal__input-wrapper{
   position: relative;
 }
 
-.input-icon{
+.modal__input-icon{
   position: absolute;
   left: 12px;
   top: 50%;
@@ -704,26 +700,26 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-textarea{
+.modal__textarea{
 height: 120px;
 resize: none;
 padding: 12px 16px;
 margin-bottom: 20px;
 }
 
-.modal-textarea::placeholder{
+.modal__textarea::placeholder{
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-textarea:focus{
+.modal__textarea:focus{
   outline: none;
   border-color: rgb(33, 150, 243);
 }
 
-.modal-label{
+.modal__label{
 display: block;
 margin-bottom: 4px;
 font-size: 12px;
@@ -732,17 +728,17 @@ letter-spacing: 0.01em;
 color: #757575;
 }
 
-.modal-input:focus + .input-icon{
+.modal__input:focus + .modal__input-icon{
   fill: rgb(33, 150, 243);
 }
 
-.modal-input:focus{
+.modal__input:focus{
   outline: none;
   border-color: rgb(33, 150, 243);  
   cursor: pointer;
 }
 
-.checkbox-agree .icon-wrapper {
+.modal__checkbox-label .modal__icon-wrapper {
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
@@ -754,51 +750,51 @@ color: #757575;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-agree{
+.modal__checkbox-label{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.check-line input:checked + .checkbox-agree .icon-wrapper {
+.check-line input:checked + .modal__checkbox-label .modal__icon-wrapper {
   background-color: rgb(33, 150, 243);
   border: none;
 }
 
-.check-line input:checked + .checkbox-agree .agree-icon {
+.check-line input:checked + .modal__checkbox-label .modal__agree-icon {
   fill: #ffffff;
 }
 
-.modal-link{
+.modal__link{
   color: var(--color-hover-logo-button);
 }
 
-.text-agree{
+.modal__text-agree{
 font-size: 14px;
 line-height: 1.7;
 color: #757575;
 }
 
-.modal-button{
+.modal__button{
 padding: 10px 52px;
  margin: 0 auto;
  display: flex;
  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button:hover{
+.modal__button:hover{
 background-color: #188CE8;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Нижня риска в хедері */
 
-.site-nav .item{
+.site-nav .site-nav__item{
   position: relative;
 }
 
-.site-nav-link::after{
+.site-nav__link--underscore::after{
 content: " ";
 position: absolute;
 width: 100%;
@@ -836,17 +832,17 @@ transform: translateY(100%);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.imgs-box-portfolio:hover .wrapper-description{
+.imgs-portfolio__item:hover .wrapper-description{
   transform: translateY(0);
 }
 
 /* Підпишіться на розсилку( Футер) */
 
-.subscribe-footer{
+.subscribe-container{
   margin-left: 93px;
 }
 
-.email-footer-input{
+.footer-form__input-email{
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -858,17 +854,17 @@ color: var(--primary-white-color);
 margin-right: 12px;
 }
 
-.email-footer-input::placeholder{
+.footer-form__input-email::placeholder{
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
 line-height: 1.25;
 }
 
-.subscribe-word{
+.subscribe-container__title{
   display: block;
 }
 
-.subscribe-button{
+.footer-form__button{
   padding: 10px 28px;
   display: flex;
   align-items: center;
@@ -876,7 +872,7 @@ line-height: 1.25;
   height: 50px;
 }
 
-.icon-telegram{
+.footer-form__icon{
 margin-left: 10px;
 }
 
