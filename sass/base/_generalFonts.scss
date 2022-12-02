@@ -1,0 +1,78 @@
+/* Робота зі шрифтом  для "Студія"*/
+
+.logo{
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+/* Шрифт для тексту в list-decisions__title */
+.list-decisions__text {
+  font-size: 14px;
+  line-height: 1.7;
+  width: 270px;
+}
+
+/* Е-мейл, пошта, навігація для "Студія" */
+.site-nav,
+.email,
+.tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Заголовок для "Студія" */
+.hero__title {
+  color: $primary-white-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  margin-bottom: 30px;
+}
+
+/* h2 для "Студія" */
+.container__subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* h3 для "Студія" */
+.list-decisions__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  width: 270px;
+}
+
+.our-team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.our-team__profession {
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 16px;
+}
+
+// Портфоліо текст і заголовок на картках
+
+.description__title-portfolio {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.description__text-portfolio {
+  font-size: 16px;
+  line-height: 1.9;
+}
