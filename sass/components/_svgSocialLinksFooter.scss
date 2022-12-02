@@ -1,0 +1,33 @@
+/* Соц.мережі футер */
+
+.social-links-box-footer{
+  width: 206px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.titles-in-footer{
+display: inline-block;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: $primary-white-color;
+margin-bottom: 20px;
+}
+
+.social-links-box__link--color{
+ color: $primary-white-color;
+background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.social-icon-box-footer{
+ padding-top: 12px;
+margin-left: 70px;
+}
+
+.container-footer{
+  display: flex;
+}
