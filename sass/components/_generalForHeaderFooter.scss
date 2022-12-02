@@ -1,0 +1,85 @@
+/* ШАПКА і ФУТЕР*/
+.link,
+.email,
+.tel,
+.logo {
+  text-decoration: none;
+}
+
+.email,
+.tel {
+  font-style: normal;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo,
+.link {
+  color: $accent-color;
+}
+
+.email,
+.tel {
+  color: $primary-text-color;
+}
+
+.logo__element {
+  color: $color-hover-logo-button;
+}
+
+.site-nav__link--visited:visited {
+  color: $color-hover-logo-button;
+}
+
+.link:hover,
+.link:focus,
+.email:hover,
+.email:focus,
+.tel:hover,
+.tel:focus {
+  color: $color-hover-logo-button;
+}
+
+h2,
+.our-team__name,
+.list-decisions__title{
+  color: $accent-color;
+}
+
+.hero {
+  background-color: $color-background-footer;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  }
+
+.footer {
+  background-color: $color-background-footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer {
+  display: block;
+  text-decoration: none;
+  color: $primary-white-color;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.list-footer__geo-link {
+  color: $primary-white-color;
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
